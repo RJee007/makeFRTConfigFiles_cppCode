@@ -1,0 +1,26 @@
+SECTION lambert simple
+  file INSERT_GROUND_SPECTRA_FILE
+END SECTION
+
+SECTION difsky
+  SQ_ratio 1
+END SECTION
+
+SECTION spectrum s1
+  start 400
+  step 5
+  number 260
+END SECTION
+
+SECTION geometry
+  n_sunangles 1
+  sunzeniths INSERT_SUN_ZENITH_ANGLE
+  viewnadir INSERT_VIEW_NADIR_ANGLE
+  viewazimuth INSERT_VIEW_AZIMUTH_ANGLE
+  viewincrement 1
+END SECTION
+
+SECTION GLCubature
+  theta 12
+  phi 12
+END SECTION
